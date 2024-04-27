@@ -9,7 +9,9 @@ const { projectId, dataset } = sanityClient.config();
 export default defineConfig({
   title: 'Astro x Presentation',
 
+  // @ts-expect-error
   projectId,
+  // @ts-expect-error
   dataset,
 
   plugins: [structureTool(), visionTool()],
